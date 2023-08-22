@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/main.ts",
-    "start": "npx tsc && node dist/main.js"
+    "start": "npx tsc && node ./dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +16,19 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
+    "inversify": "^6.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "inversify-express-utils": "^6.4.3",
+    "inversify-inject-decorators": "^3.1.0",
     "morgan": "^1.10.0",
-    "prettier": "^3.0.1"
+    "prettier": "^3.0.1",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.17",
+    "@types/inversify-inject-decorators": "^2.0.0",
     "@types/morgan": "^1.9.4",
     "@types/node": "^20.4.9",
     "nodemon": "^3.0.1",

@@ -1,12 +1,14 @@
-import express from "express"
+import App from './config/app';
 
-const app = express()
-const port = 1000
-
-app.get('/', (request, response) => {
-  response.json({});
-});
-
-app.listen(port, () => {
-  console.log(`[Server]: running on port ${port}`);
-});
+void (
+  async () => {
+    try {
+      const app = new App();
+      app.setConfig();
+      app.build();
+      app.listen();
+    } catch (error) {
+      console.log(error)
+    }
+  }
+)()
